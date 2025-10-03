@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form!</title>
+    </head>
+    <body>
+        <%- include("partials/nav") %>
+        <form action="/new" method="post">
+            <h3>Add new message</h3>
+            <label for="user">User name:</label>
+            <input type="text" name="user" id="user" />
+            <label for="message">Message:</label>
+            <input type="text" name="message" id="message" />
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>
