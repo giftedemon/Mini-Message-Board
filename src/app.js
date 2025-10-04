@@ -1,11 +1,8 @@
-import dotenv from "dotenv";
 import express from "express";
 import path, { dirname } from "path";
 import { fileURLToPath } from "url";
 
 import { getForm, getHome, postForm } from "./controllers/homeController.js";
-
-dotenv.config();
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);

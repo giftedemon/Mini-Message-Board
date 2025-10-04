@@ -10,9 +10,9 @@
             <%- include("partials/nav") %>
             <div class="messages">
                 <% for (let i = 0; i < messages.length; i++) {%>
-                <p class="author"><%= messages[i].user %>:</p>
-                <p class="message"><%= messages[i].text %></p>
-                <p class="time"><%= messages[i].added %></p>
+                <p class="author"><%= messages[i].username %>:</p>
+                <p class="message"><%= messages[i].message %></p>
+                <p class="time"><%= messages[i].date %></p>
                 <% } %>
             </div>
         </div>
